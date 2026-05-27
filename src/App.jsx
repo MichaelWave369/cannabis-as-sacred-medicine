@@ -27,8 +27,11 @@ import {
   Users,
 } from 'lucide-react';
 
-const VERSION = 'v1.0.1 Public Release';
+const SITE_VERSION = 'v1.0.2 Site Polish';
+const CONTENT_VERSION = 'v1.0.1 Public Release';
 const AUTHOR = 'Michael W. Hughes — Parallax / PHI369 Labs';
+const SITE_URL = 'https://michaelwave369.github.io/cannabis-as-sacred-medicine/';
+const REPO_URL = 'https://github.com/MichaelWave369/cannabis-as-sacred-medicine';
 
 const downloads = [
   ['Main Paper PDF', '/cannabis-as-sacred-medicine/papers/Cannabis_as_Sacred_Medicine_Michael_W_Hughes_Parallax_PHI369_Labs_v1_0_1_Public_Release.pdf'],
@@ -45,6 +48,7 @@ const navItems = [
   ['language', 'Safe Language'],
   ['cycle', 'Transmutation'],
   ['downloads', 'Downloads'],
+  ['cite', 'Cite'],
 ];
 
 const sections = [
@@ -270,7 +274,7 @@ export default function App() {
             </div>
             <div>
               <p className="text-sm font-bold leading-tight text-emerald-950">Cannabis as Sacred Medicine</p>
-              <p className="hidden text-xs text-stone-600 sm:block">{VERSION}</p>
+              <p className="hidden text-xs text-stone-600 sm:block">{SITE_VERSION} · content {CONTENT_VERSION}</p>
             </div>
           </button>
           <nav aria-label="Main sections" className="hidden items-center gap-1 lg:flex">
@@ -281,6 +285,13 @@ export default function App() {
             ))}
           </nav>
         </div>
+        <nav aria-label="Mobile section navigation" className="flex gap-2 overflow-x-auto border-t border-amber-100 px-4 py-2 lg:hidden">
+          {navItems.map(([id, label]) => (
+            <button key={id} onClick={() => scrollTo(id)} className="shrink-0 rounded-full bg-white px-3 py-2 text-xs font-semibold text-emerald-950 shadow-sm ring-1 ring-amber-200 focus:outline-none focus:ring-2 focus:ring-emerald-900">
+              {label}
+            </button>
+          ))}
+        </nav>
       </header>
 
       <main id="top">
@@ -328,7 +339,7 @@ export default function App() {
           </motion.div>
         </section>
 
-        <section id="thesis" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-24">
+        <section id="thesis" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-32">
           <SectionTitle eyebrow="Genre boundary" title="What this project is — and is not">This navigator presents an evidence-informed public education, policy, and testimony paper. It is not a clinical trial, systematic review, dosing protocol, medical guideline, legal advice, or theological proof.</SectionTitle>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {[[FileText, 'Evidence-informed', 'Built from major reviews, government sources, peer-reviewed literature, policy records, and clearly labeled testimony.'], [ShieldCheck, 'Bounded claims', 'Clinical evidence, ritual history, contested interpretation, ecology, and testimony remain separate claim categories.'], [AlertTriangle, 'Risk-aware', 'Names risks including impaired driving, CUD, CHS, youth concerns, psychosis vulnerability, pregnancy, interactions, and potency.'], [HandHeart, 'Dignity-centered', 'Argues for reverence, repair, consent, maturity, cultural humility, and harm-reduction boundaries.']].map(([Icon, title, text]) => (
@@ -337,7 +348,7 @@ export default function App() {
           </div>
         </section>
 
-        <section id="map" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-24">
+        <section id="map" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-32">
           <SectionTitle eyebrow="Claim discipline" title="Evidence Strength Map">The key discipline is preventing the reader from confusing one type of claim for another.</SectionTitle>
           <Card className="overflow-hidden p-0">
             <div className="overflow-x-auto">
@@ -349,7 +360,7 @@ export default function App() {
           </Card>
         </section>
 
-        <section id="explore" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-24">
+        <section id="explore" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-32">
           <div className="mb-6 grid gap-3 md:grid-cols-[1fr_auto] md:items-end">
             <SectionTitle eyebrow="Explore" title="Navigate the paper by theme">Search or filter the core framework. Each card includes the claim boundary that keeps the argument honest.</SectionTitle>
             <div className="flex flex-col gap-3 sm:flex-row md:justify-end">
@@ -365,29 +376,57 @@ export default function App() {
           </div>
         </section>
 
-        <section id="policy" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-24">
+        <section id="policy" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-32">
           <SectionTitle eyebrow="Policy framework" title="How a society institutionalizes reverence">Reverence becomes real when systems protect truth, dignity, access, restraint, and repair.</SectionTitle>
           <div className="grid gap-4 lg:grid-cols-4">{policyPillars.map(([title, Icon, bullets]) => <Card key={title}><IconBubble icon={Icon} /><h3 className="mt-4 text-lg font-bold text-emerald-950">{title}</h3><ul className="mt-3 space-y-2 text-sm text-stone-700">{bullets.map((b) => <li key={b} className="flex gap-2"><BadgeCheck className="mt-0.5 shrink-0 text-emerald-800" size={15} aria-hidden="true" /><span>{b}</span></li>)}</ul></Card>)}</div>
           <Card className="mt-6 overflow-hidden p-0"><div className="bg-emerald-950 px-5 py-4 text-amber-100"><h3 className="text-lg font-bold">Metrics of success</h3><p className="mt-1 text-sm text-amber-100/80">The framework should be measurable, not merely inspirational.</p></div><div className="grid divide-y divide-amber-100 md:grid-cols-2 md:divide-x md:divide-y-0">{metrics.map(([label, metric]) => <div key={label} className="p-5"><p className="font-bold text-emerald-950">{label}</p><p className="mt-1 text-sm leading-6 text-stone-700">{metric}</p></div>)}</div></Card>
         </section>
 
-        <section id="language" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-24">
+        <section id="language" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-32">
           <SectionTitle eyebrow="Safe-language guide" title="Say this, not that">Advocacy becomes stronger when it refuses overclaiming.</SectionTitle>
           {copied ? <p className="mb-4 rounded-2xl bg-emerald-950 px-4 py-3 text-sm font-semibold text-amber-100" role="status">Copied safer wording.</p> : null}
           <div className="grid gap-4 md:grid-cols-2">{safeLanguage.map(([avoid, use]) => <Card key={avoid}><div className="grid gap-4 md:grid-cols-2"><div className="rounded-2xl border border-red-200 bg-red-50 p-4"><p className="text-xs font-bold uppercase tracking-[0.2em] text-red-700">Avoid</p><p className="mt-2 text-sm font-semibold text-red-950">“{avoid}”</p></div><div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-4"><p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-700">Use</p><p className="mt-2 text-sm font-semibold leading-6 text-emerald-950">“{use}”</p><button onClick={() => copyText(use)} className="mt-3 rounded-full bg-emerald-950 px-3 py-2 text-xs font-bold text-amber-100 transition hover:bg-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-900" aria-label={`Copy safer wording: ${use}`}>Copy safer wording</button></div></div></Card>)}</div>
         </section>
 
-        <section id="cycle" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-24">
+        <section id="cycle" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-32">
           <SectionTitle eyebrow="Transmutation cycle" title="Pain becomes care">The paper’s moral arc is not self-indulgence. It is survival becoming service.</SectionTitle>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">{cycle.map(([stage, Icon, meaning, practice], idx) => <Card key={stage} className="relative overflow-hidden"><div className="absolute right-4 top-4 text-5xl font-black text-amber-100">{idx + 1}</div><div className="relative"><div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-950"><Icon size={22} aria-hidden="true" /></div><h3 className="text-2xl font-black text-emerald-950">{stage}</h3><p className="mt-2 text-sm leading-6 text-stone-700">{meaning}</p><p className="mt-4 rounded-2xl bg-emerald-50 p-3 text-sm font-semibold text-emerald-950">{practice}</p></div></Card>)}</div>
         </section>
 
-        <section id="downloads" className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:pb-20 scroll-mt-24">
-          <SectionTitle eyebrow="Release package" title="Download and share responsibly">PDF links will work after the release files are uploaded into <code>public/papers/</code>.</SectionTitle>
+        <section id="downloads" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-32">
+          <SectionTitle eyebrow="Release package" title="Download and share responsibly">The v1.0.1 public-release PDFs are live and served from this GitHub Pages site.</SectionTitle>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">{downloads.map(([label, href]) => <a key={label} href={href} download className="group rounded-2xl border border-amber-200 bg-white/85 p-5 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-emerald-900"><div className="flex items-center justify-between gap-4"><IconBubble icon={Download} /><ExternalLink className="text-stone-400 transition group-hover:text-emerald-800" size={18} aria-hidden="true" /></div><h3 className="mt-4 text-lg font-bold text-emerald-950">{label}</h3><p className="mt-2 text-sm text-stone-600">Direct download from the public release package.</p></a>)}</div>
-          <Card className="mt-6 bg-emerald-950 text-stone-50"><div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"><div><p className="font-bold text-amber-200">Public status</p><p className="mt-1 text-sm leading-6 text-stone-200">{VERSION} · Evidence-informed public education, policy, and testimony paper · Not medical, legal, or spiritual advice.</p></div><div className="flex items-center gap-2 rounded-2xl bg-white/10 px-4 py-3 text-sm font-semibold text-amber-100"><Map size={18} aria-hidden="true" />Body · Spirit · Justice · Practice</div></div></Card>
+        </section>
+
+        <section id="cite" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-32">
+          <SectionTitle eyebrow="Citation" title="How to cite this work">Use the repository citation metadata for software/site references and the paper title for content references.</SectionTitle>
+          <div className="grid gap-4 lg:grid-cols-2">
+            <Card className="bg-emerald-950 text-stone-50">
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-amber-200">Suggested citation</p>
+              <p className="mt-3 text-sm leading-7 text-stone-100">Hughes, Michael W. <em>Cannabis as Sacred Medicine: Healing the Body, Restoring Dignity, and Transmuting Pain into Joy.</em> Parallax / PHI369 Labs, {CONTENT_VERSION}. Public navigator {SITE_VERSION}.</p>
+            </Card>
+            <Card>
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-amber-800">Version and repository</p>
+              <p className="mt-3 text-sm leading-7 text-stone-700">Site: <a className="font-semibold text-emerald-900 underline" href={SITE_URL}>GitHub Pages navigator</a></p>
+              <p className="mt-1 text-sm leading-7 text-stone-700">Repository: <a className="font-semibold text-emerald-900 underline" href={REPO_URL}>MichaelWave369/cannabis-as-sacred-medicine</a></p>
+              <p className="mt-1 text-sm leading-7 text-stone-700">Code license: MIT. Content/assets/testimony language: CC BY-NC-SA 4.0 unless otherwise noted.</p>
+            </Card>
+          </div>
         </section>
       </main>
+
+      <footer className="border-t border-amber-200 bg-emerald-950 px-4 py-10 text-stone-100 md:px-6">
+        <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+          <div>
+            <p className="text-lg font-bold text-amber-200">Cannabis as Sacred Medicine</p>
+            <p className="mt-2 max-w-3xl text-sm leading-7 text-stone-200">{SITE_VERSION} · content {CONTENT_VERSION}. Evidence-informed public education, policy, and testimony project by {AUTHOR}. This project is not medical advice, legal advice, spiritual direction, a clinical trial, systematic review, dosing protocol, or treatment guideline.</p>
+          </div>
+          <div className="rounded-2xl border border-amber-200/20 bg-white/10 p-4 text-sm leading-7 text-stone-200">
+            <p><strong className="text-amber-200">License split:</strong> Code is MIT. Written materials, PDFs, testimony language, diagrams, and visual assets are CC BY-NC-SA 4.0 unless otherwise noted.</p>
+            <p className="mt-2"><strong className="text-amber-200">Claim boundary:</strong> The project argues for reverence without pretending reverence is evidence.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
