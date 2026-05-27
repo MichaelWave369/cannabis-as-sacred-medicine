@@ -3,7 +3,10 @@
 **Evidence-informed public education, policy, and testimony project on cannabis as sacred medicine, claim discipline, dignity repair, and harm reduction.**
 
 Author: **Michael W. Hughes — Parallax / PHI369 Labs**  
-Status: **v1.0.1 Public Release**
+Site status: **v1.0.2 Site Polish**  
+Content status: **v1.0.1 Public Release**
+
+Live navigator: <https://michaelwave369.github.io/cannabis-as-sacred-medicine/>
 
 This repository hosts the public-facing React navigator and release materials for *Cannabis as Sacred Medicine: Healing the Body, Restoring Dignity, and Transmuting Pain into Joy*.
 
@@ -20,13 +23,13 @@ This project is **not** medical advice, legal advice, spiritual direction, a cli
 ## Repository contents
 
 ```text
-app / source files live at the repository root for GitHub Pages deployment
 src/App.jsx             Interactive React navigator
 src/main.jsx            React entry point
 src/index.css           Tailwind styles and accessibility polish
-public/papers/          Drop release PDFs here before deployment
-public/images/          Drop visual assets here before deployment
+public/papers/          Public-release PDF downloads
+public/images/          Public visual assets
 docs/                   Claim boundaries and launch notes
+CHANGELOG.md            Version history for site/content releases
 ```
 
 ## Local development
@@ -52,7 +55,7 @@ npm run preview
 
 The included GitHub Pages workflow builds the Vite app and deploys `dist/`.
 
-Expected public URL after Pages is enabled:
+Public URL:
 
 ```text
 https://michaelwave369.github.io/cannabis-as-sacred-medicine/
@@ -60,9 +63,9 @@ https://michaelwave369.github.io/cannabis-as-sacred-medicine/
 
 In GitHub, go to **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
-## Asset upload checklist
+## Release assets
 
-Before official launch, place the v1.0.1 PDFs and images into:
+The v1.0.1 public-release PDFs and PNG visual assets are stored in:
 
 ```text
 public/papers/
@@ -81,6 +84,14 @@ Expected filenames are listed in `public/papers/README.md` and `public/images/RE
 
 See `CITATION.cff`.
 
+Suggested content citation:
+
+> Hughes, Michael W. *Cannabis as Sacred Medicine: Healing the Body, Restoring Dignity, and Transmuting Pain into Joy.* Parallax / PHI369 Labs, v1.0.1 Public Release. Public navigator v1.0.2 Site Polish.
+
 ## Claim boundary
 
 The power of this project is that it argues for reverence **without pretending reverence is evidence**. See `docs/CLAIM_BOUNDARIES.md`.
+
+## Changelog
+
+See `CHANGELOG.md` for release history.
