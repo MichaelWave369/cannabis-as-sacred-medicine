@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: Cannabis as Sacred Medicine
+message: If you use this project, please cite it using the metadata below.
+type: software
+authors:
+  - family-names: Hughes
+    given-names: Michael W.
+version: 1.0.1
+date-released: 2026-05-27
+repository-code: https://github.com/MichaelWave369/cannabis-as-sacred-medicine
+abstract: Evidence-informed public education, policy, and testimony project on cannabis as sacred medicine, claim discipline, dignity repair, and harm reduction.
+license: MIT
+preferred-citation:
+  type: report
+  title: Cannabis as Sacred Medicine: Healing the Body, Restoring Dignity, and Transmuting Pain into Joy
+  authors:
+    - family-names: Hughes
+      given-names: Michael W.
+  institution: Parallax / PHI369 Labs
+  year: 2026
+  version: v1.0.1 Public Release
