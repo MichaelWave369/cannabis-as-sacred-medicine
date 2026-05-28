@@ -7,6 +7,28 @@ This project uses two related version tracks:
 - **Paper/content release:** the underlying public paper and companion materials.
 - **Site polish release:** improvements to the React navigator, metadata, accessibility, and public presentation.
 
+## v1.0.3 DOI Sync — 2026-05-28
+
+### Added
+
+- Official Zenodo DOI release publication: `10.5281/zenodo.20420539`
+- All-versions DOI archive reference: `10.5281/zenodo.20420538`
+- DOI badge and citation metadata added to `README.md`
+- Zenodo citation metadata synchronized into `CITATION.cff`
+- Public archival citation guidance for repository and report references
+
+### Changed
+
+- Updated repository metadata to reflect published archival release state.
+- Clarified distinction between code licensing (MIT) and written-material licensing (CC BY-NC-SA 4.0).
+- Improved long-term academic/public-reference readiness.
+
+### Preserved
+
+- Claim discipline and harm-reduction framing.
+- Separation between scientific evidence, testimony, ritual history, and ethical synthesis.
+- Public-safe educational positioning without overclaiming.
+
 ## v1.0.2 Site Polish — 2026-05-27
 
 ### Added
