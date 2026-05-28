@@ -1,10 +1,14 @@
 # Cannabis as Sacred Medicine
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20420539.svg)](https://doi.org/10.5281/zenodo.20420539)
+
 **Evidence-informed public education, policy, and testimony project on cannabis as sacred medicine, claim discipline, dignity repair, and harm reduction.**
 
 Author: **Michael W. Hughes — Parallax / PHI369 Labs**  
-Site status: **v1.0.2 Site Polish**  
-Content status: **v1.0.1 Public Release**
+Site status: **v1.0.3 DOI Sync**  
+Content status: **v1.0.1 Public Release**  
+Zenodo DOI: **https://doi.org/10.5281/zenodo.20420539**  
+All-versions DOI: **https://doi.org/10.5281/zenodo.20420538**
 
 Live navigator: <https://michaelwave369.github.io/cannabis-as-sacred-medicine/>
 
@@ -30,6 +34,7 @@ public/papers/          Public-release PDF downloads
 public/images/          Public visual assets
 docs/                   Claim boundaries and launch notes
 CHANGELOG.md            Version history for site/content releases
+CITATION.cff            Citation metadata, including Zenodo DOI
 ```
 
 ## Local development
@@ -86,7 +91,11 @@ See `CITATION.cff`.
 
 Suggested content citation:
 
-> Hughes, Michael W. *Cannabis as Sacred Medicine: Healing the Body, Restoring Dignity, and Transmuting Pain into Joy.* Parallax / PHI369 Labs, v1.0.1 Public Release. Public navigator v1.0.2 Site Polish.
+> Hughes, Michael W. (2026). *Cannabis as Sacred Medicine: Healing the Body, Restoring Dignity, and Transmuting Pain into Joy* (v1.0.1 Public Release). Zenodo. https://doi.org/10.5281/zenodo.20420539
+
+Use the all-versions DOI for citing the complete release lineage:
+
+> https://doi.org/10.5281/zenodo.20420538
 
 ## Claim boundary
 
