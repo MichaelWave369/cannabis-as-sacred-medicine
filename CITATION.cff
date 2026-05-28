@@ -1,13 +1,15 @@
 cff-version: 1.2.0
 title: Cannabis as Sacred Medicine
-message: If you use this project, please cite it using the metadata below.
+message: If you use this project, please cite the Zenodo record or the repository metadata below.
 type: software
 authors:
   - family-names: Hughes
     given-names: Michael W.
-version: 1.0.1
-date-released: 2026-05-27
+version: 1.0.3
+date-released: 2026-05-28
 repository-code: https://github.com/MichaelWave369/cannabis-as-sacred-medicine
+url: https://michaelwave369.github.io/cannabis-as-sacred-medicine/
+doi: 10.5281/zenodo.20420539
 abstract: Evidence-informed public education, policy, and testimony project on cannabis as sacred medicine, claim discipline, dignity repair, and harm reduction.
 license: MIT
 preferred-citation:
@@ -18,4 +20,7 @@ preferred-citation:
       given-names: Michael W.
   institution: Parallax / PHI369 Labs
   year: 2026
+  date-released: 2026-05-28
   version: v1.0.1 Public Release
+  doi: 10.5281/zenodo.20420539
+  url: https://doi.org/10.5281/zenodo.20420539
