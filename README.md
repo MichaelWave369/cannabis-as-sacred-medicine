@@ -110,3 +110,7 @@ See `CHANGELOG.md` for release history.
 The public navigator now includes a source-bound **oncology research section** that fetches a [v1 governed evidence feed from Cannabiverse](https://michaelwave369.github.io/Cannabiverse/data/oncology/evidence-v1.json). It distinguishes preclinical cancer biology, human pilot limits, supportive-care medicines, and clinical evidence boundaries. See [the integration contract](docs/ONCOLOGY_INTEGRATION.md) and run `npm run check:oncology`.
 
 This is a live navigator addition, **not a mutation of the published v1.0.1 Zenodo paper/PDFs**; future Zenodo amendments require a separately deposited version.
+
+## Φ Research Bridge v2
+
+[Explore the shared research bridge](https://michaelwave369.github.io/cannabis-as-sacred-medicine/#research-bridge) to browse 145 permanent molecule IDs, follow scoped oncology claims with their original citations, and deep-link to governed Cannabiverse 3D models when present. The scientific authority lives in [Cannabiverse's v2 manifest](https://michaelwave369.github.io/Cannabiverse/data/bridge/research-index-v2.json) and existing versioned source feeds; this React site never rewrites those claims. See [bridge integration notes](docs/RESEARCH_BRIDGE_V2.md). Run `npm run check:bridge`.

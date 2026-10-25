@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import OncologyEvidence from './OncologyEvidence.jsx';
+import ResearchBridge from './ResearchBridge.jsx';
 import { motion } from 'framer-motion';
 import {
   AlertTriangle,
@@ -45,6 +46,7 @@ const navItems = [
   ['thesis', 'Thesis'],
   ['map', 'Evidence Map'],
   ['oncology', 'Oncology'],
+  ['research-bridge', 'Research Bridge'],
   ['explore', 'Explore'],
   ['policy', 'Policy'],
   ['language', 'Safe Language'],
@@ -365,6 +367,7 @@ export default function App() {
         </section>
 
         <OncologyEvidence />
+        <ResearchBridge />
 
         <section id="explore" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-32">
           <div className="mb-6 grid gap-3 md:grid-cols-[1fr_auto] md:items-end">
