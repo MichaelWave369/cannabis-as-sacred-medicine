@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
     "check:oncology": "node scripts/check-oncology.mjs",
-    "check:bridge": "node scripts/check-research-bridge.mjs"
+    "check:bridge": "node scripts/check-research-bridge.mjs",
+    "check:pain-ecs": "node scripts/check-pain-ecs.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",

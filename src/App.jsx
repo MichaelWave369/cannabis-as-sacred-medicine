@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import OncologyEvidence from './OncologyEvidence.jsx';
 import ResearchBridge from './ResearchBridge.jsx';
+import PainEvidence from './PainEvidence.jsx';
 import { motion } from 'framer-motion';
 import {
   AlertTriangle,
@@ -46,6 +47,7 @@ const navItems = [
   ['thesis', 'Thesis'],
   ['map', 'Evidence Map'],
   ['oncology', 'Oncology'],
+  ['pain-ecs', 'Pain & ECS'],
   ['research-bridge', 'Research Bridge'],
   ['explore', 'Explore'],
   ['policy', 'Policy'],
@@ -164,7 +166,7 @@ const sections = [
 
 const evidenceRows = [
   ['Cannabis cures cancer.', 'Not established in humans', 'Certain cannabinoids affect cancer models, but clinical anticancer efficacy is not established.'],
-  ['Cannabis/cannabinoids can help some chronic pain patients.', 'Strongest clinical support', 'Supported for some adult chronic-pain contexts; not a universal cure.'],
+  ['Some cannabinoid products improve chronic pain.', 'Small, formulation-specific short-term effects', 'AHRQ 2025 found small benefits in mainly neuropathic chronic pain with certain THC-containing products, plus important adverse effects.'],
   ['Oral cannabinoids can help chemotherapy-related nausea/vomiting.', 'Strong clinical support', 'Supported in specific medical contexts; product and patient factors matter.'],
   ['Cannabis has ritual/sacred history.', 'Historically credible, context-specific', 'Some cultures and archaeological sites support ritual use; do not universalize.'],
   ['Qaneh-bosem was definitely cannabis.', 'Contested interpretation', 'Some argue it may refer to cannabis, but the identification remains unresolved.'],
@@ -174,6 +176,7 @@ const evidenceRows = [
 ];
 
 const safeLanguage = [
+  ['CBD alone reliably treats chronic pain.', 'In AHRQ’s 2025 review, studied oral CBD-only products did not improve chronic pain or function compared with placebo.'],
   ['Cannabis cures cancer.', 'Some cannabinoids show effects in laboratory and animal cancer models; these findings do not establish anticancer efficacy in humans.'],
   ['Cannabis cures pain.', 'Cannabis or cannabinoids may help some adults with chronic pain; benefits vary by person and condition.'],
   ['Cannabis is harmless because it is natural.', 'Cannabis is powerful enough to help and powerful enough to harm; it deserves respect and boundaries.'],
@@ -367,6 +370,7 @@ export default function App() {
         </section>
 
         <OncologyEvidence />
+        <PainEvidence />
         <ResearchBridge />
 
         <section id="explore" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-32">
