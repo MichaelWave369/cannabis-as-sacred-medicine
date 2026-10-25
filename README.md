@@ -114,3 +114,7 @@ This is a live navigator addition, **not a mutation of the published v1.0.1 Zeno
 ## Φ Research Bridge v2
 
 [Explore the shared research bridge](https://michaelwave369.github.io/cannabis-as-sacred-medicine/#research-bridge) to browse 145 permanent molecule IDs, follow scoped oncology claims with their original citations, and deep-link to governed Cannabiverse 3D models when present. The scientific authority lives in [Cannabiverse's v2 manifest](https://michaelwave369.github.io/Cannabiverse/data/bridge/research-index-v2.json) and existing versioned source feeds; this React site never rewrites those claims. See [bridge integration notes](docs/RESEARCH_BRIDGE_V2.md). Run `npm run check:bridge`.
+
+## Pain & ECS research · Φ Research Bridge content release v3
+
+The [Pain & Endocannabinoid System navigator](https://michaelwave369.github.io/cannabis-as-sacred-medicine/#pain-ecs) reads Cannabiverse's additive `pain-ecs` domain through the unchanged bridge v2 manifest. It distinguishes **AHRQ 2025 human clinical findings**, short-term adverse effects, IASP's 2021 professional position, and receptor biology without claiming universal clinical efficacy. Sources and original claims remain owned by [Cannabiverse](https://michaelwave369.github.io/Cannabiverse/app/pain/). Run `npm run check:pain-ecs` to test the consumer's two-domain integration. No Zenodo PDFs were amended.
