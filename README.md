@@ -104,3 +104,9 @@ The power of this project is that it argues for reverence **without pretending r
 ## Changelog
 
 See `CHANGELOG.md` for release history.
+
+## Shared research bridge with Cannabiverse
+
+The public navigator now includes a source-bound **oncology research section** that fetches a [v1 governed evidence feed from Cannabiverse](https://michaelwave369.github.io/Cannabiverse/data/oncology/evidence-v1.json). It distinguishes preclinical cancer biology, human pilot limits, supportive-care medicines, and clinical evidence boundaries. See [the integration contract](docs/ONCOLOGY_INTEGRATION.md) and run `npm run check:oncology`.
+
+This is a live navigator addition, **not a mutation of the published v1.0.1 Zenodo paper/PDFs**; future Zenodo amendments require a separately deposited version.
