@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import OncologyEvidence from './OncologyEvidence.jsx';
 import { motion } from 'framer-motion';
 import {
   AlertTriangle,
@@ -43,6 +44,7 @@ const downloads = [
 const navItems = [
   ['thesis', 'Thesis'],
   ['map', 'Evidence Map'],
+  ['oncology', 'Oncology'],
   ['explore', 'Explore'],
   ['policy', 'Policy'],
   ['language', 'Safe Language'],
@@ -159,6 +161,7 @@ const sections = [
 ];
 
 const evidenceRows = [
+  ['Cannabis cures cancer.', 'Not established in humans', 'Certain cannabinoids affect cancer models, but clinical anticancer efficacy is not established.'],
   ['Cannabis/cannabinoids can help some chronic pain patients.', 'Strongest clinical support', 'Supported for some adult chronic-pain contexts; not a universal cure.'],
   ['Oral cannabinoids can help chemotherapy-related nausea/vomiting.', 'Strong clinical support', 'Supported in specific medical contexts; product and patient factors matter.'],
   ['Cannabis has ritual/sacred history.', 'Historically credible, context-specific', 'Some cultures and archaeological sites support ritual use; do not universalize.'],
@@ -169,6 +172,7 @@ const evidenceRows = [
 ];
 
 const safeLanguage = [
+  ['Cannabis cures cancer.', 'Some cannabinoids show effects in laboratory and animal cancer models; these findings do not establish anticancer efficacy in humans.'],
   ['Cannabis cures pain.', 'Cannabis or cannabinoids may help some adults with chronic pain; benefits vary by person and condition.'],
   ['Cannabis is harmless because it is natural.', 'Cannabis is powerful enough to help and powerful enough to harm; it deserves respect and boundaries.'],
   ['Cannabis was definitely in the Bible.', 'Some argue qaneh-bosem may refer to cannabis, but the identification remains contested.'],
@@ -359,6 +363,8 @@ export default function App() {
             </div>
           </Card>
         </section>
+
+        <OncologyEvidence />
 
         <section id="explore" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-32">
           <div className="mb-6 grid gap-3 md:grid-cols-[1fr_auto] md:items-end">
