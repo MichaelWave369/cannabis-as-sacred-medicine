@@ -23,5 +23,7 @@ jobs:
         run: npm run check:bridge
       - name: Verify Pain & ECS domain integration
         run: npm run check:pain-ecs
+      - name: Verify archaeology domain integration
+        run: npm run check:archaeology
       - name: Build React navigator
         run: npm run build
