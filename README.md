@@ -118,3 +118,7 @@ This is a live navigator addition, **not a mutation of the published v1.0.1 Zeno
 ## Pain & ECS research · Φ Research Bridge content release v3
 
 The [Pain & Endocannabinoid System navigator](https://michaelwave369.github.io/cannabis-as-sacred-medicine/#pain-ecs) reads Cannabiverse's additive `pain-ecs` domain through the unchanged bridge v2 manifest. It distinguishes **AHRQ 2025 human clinical findings**, short-term adverse effects, IASP's 2021 professional position, and receptor biology without claiming universal clinical efficacy. Sources and original claims remain owned by [Cannabiverse](https://michaelwave369.github.io/Cannabiverse/app/pain/). Run `npm run check:pain-ecs` to test the consumer's two-domain integration. No Zenodo PDFs were amended.
+
+## Ancient Cannabis & Archaeochemistry · Φ Research Bridge content v4
+
+The [Ancient Cannabis Evidence section](https://michaelwave369.github.io/cannabis-as-sacred-medicine/#archaeology) reads Cannabiverse's [governed archaeological feed](https://michaelwave369.github.io/Cannabiverse/data/archaeology/evidence-v1.json) through the unchanged research bridge v2 transport. It includes Tunnug 1 (2026), Jirzankal (2019), specific Pazyryk material records and Herodotus's historical text, with separate evidence lanes and explicit limits. The Tunnug hair interpretation is contested; residue detection is not proof of clinical efficacy. See [the consumer contract](docs/ARCHAEOLOGY_BRIDGE_V4.md). Run `npm run check:archaeology`. The published Zenodo PDFs were **not** amended.

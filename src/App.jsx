@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import OncologyEvidence from './OncologyEvidence.jsx';
 import ResearchBridge from './ResearchBridge.jsx';
 import PainEvidence from './PainEvidence.jsx';
+import ArchaeologyEvidence from './ArchaeologyEvidence.jsx';
 import { motion } from 'framer-motion';
 import {
   AlertTriangle,
@@ -48,6 +49,7 @@ const navItems = [
   ['map', 'Evidence Map'],
   ['oncology', 'Oncology'],
   ['pain-ecs', 'Pain & ECS'],
+  ['archaeology', 'Ancient Cannabis'],
   ['research-bridge', 'Research Bridge'],
   ['explore', 'Explore'],
   ['policy', 'Policy'],
@@ -371,6 +373,7 @@ export default function App() {
 
         <OncologyEvidence />
         <PainEvidence />
+        <ArchaeologyEvidence />
         <ResearchBridge />
 
         <section id="explore" className="mx-auto max-w-7xl px-4 py-10 md:px-6 scroll-mt-32">
