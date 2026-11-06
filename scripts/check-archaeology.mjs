@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {validateBridgeManifest,validateBridgeDataset,claimsForCompound} from '../src/researchBridgeFeed.js';
-const base={contract_version:'2.0.0',dataset_id:'cannabiverse-research-bridge',relationship_semantics:'References do not prove efficacy',sources:{compounds:'../evidence/compound_evidence_summary.json',structures:'../structures/structure_index.json',chemistry_sources:'../research/sources.json'}};
+const base={contract_version:'2.0.0',dataset_id:'cannabiverse-research-bridge',relationship_semantics:'A referenced molecule does not prove efficacy',sources:{compounds:'../evidence/compound_evidence_summary.json',structures:'../structures/structure_index.json',chemistry_sources:'../research/sources.json'}};
 const specs=[
  {id:'oncology',title:'Oncology',evidence_url:'../oncology/evidence-v1.json',expected_dataset_id:'cannabiverse-oncology-evidence',expected_contract_version:'1.0.0',human_efficacy_warning:'Anticancer efficacy not established'},
  {id:'pain-ecs',title:'Pain',evidence_url:'../pain-ecs/evidence-v1.json',expected_dataset_id:'cannabiverse-pain-ecs-evidence',expected_contract_version:'1.0.0',human_efficacy_warning:'Unstudied products not established'},
