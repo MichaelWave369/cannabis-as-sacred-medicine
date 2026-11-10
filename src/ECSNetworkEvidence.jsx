@@ -39,6 +39,7 @@ export default function ECSNetworkEvidence(){
     <div className="mt-4 flex flex-wrap gap-4 text-sm">
       <a className={linkClass} target="_blank" rel="noopener noreferrer" href="https://michaelwave369.github.io/Cannabiverse/app/ecs/">Open interactive Cannabiverse ECS Network Atlas</a>
       <a className={linkClass} target="_blank" rel="noopener noreferrer" href="https://michaelwave369.github.io/Cannabiverse/app/ecs/body.html">Explore the human-body CB1/CB2 map</a>
+      <a className={linkClass} target="_blank" rel="noopener noreferrer" href="https://michaelwave369.github.io/Cannabiverse/app/ecs/journeys.html">Follow an ECS signal step by step</a>
     </div>
     {state.status==='loading'&&<p role="status" className="mt-6 text-sm text-stone-700">Verifying versioned scientific source…</p>}
     {state.status==='unavailable'&&<p role="status" className="mt-6 rounded-xl border border-amber-300 bg-white p-5 text-sm text-stone-700">The authoritative ECS feed is not yet published, available, or compatible. No fallback medical or mechanistic claims will be displayed.</p>}
