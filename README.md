@@ -130,3 +130,7 @@ The [ECS Network Atlas companion](https://michaelwave369.github.io/cannabis-as-s
 ## ECS Human-Body Map companion link
 
 The ECS Network Atlas section links to Cannabiverse's [CB1/CB2 human-body tissue explorer](https://michaelwave369.github.io/Cannabiverse/app/ecs/body.html). The seven anatomical pins are schematic, not expression-density measurements; the receptor pathways cite human and/or preclinical literature with explicit study/model boundaries. All tissue data and source receipts remain owned by Cannabiverse. Deploy [Cannabiverse PR #38](https://github.com/MichaelWave369/Cannabiverse/pull/38) first. The Sacred Medicine release does not amend the published Zenodo paper/PDFs.
+
+## ECS Signal Journey Lab companion
+
+The existing read-only ECS section links to the [Cannabiverse guided signal-journey explorer](https://michaelwave369.github.io/Cannabiverse/app/ecs/journeys.html). Its three source-verified mechanisms cover 2-AG synaptic signaling, anandamide synthesis/breakdown, and CB2-linked immune biology. Every step remains sourced by the authoritative Cannabiverse ledger, which Sacred Medicine does not duplicate. No clinical benefit or diagnosis follows from receptor biology. Deploy [Cannabiverse PR #39](https://github.com/MichaelWave369/Cannabiverse/pull/39) first; this change does not amend published Zenodo PDFs.
