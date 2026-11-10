@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import OncologyEvidence from './OncologyEvidence.jsx';
 import ResearchBridge from './ResearchBridge.jsx';
 import PainEvidence from './PainEvidence.jsx';
+import ECSNetworkEvidence from './ECSNetworkEvidence.jsx';
 import ArchaeologyEvidence from './ArchaeologyEvidence.jsx';
 import { motion } from 'framer-motion';
 import {
@@ -373,6 +374,7 @@ export default function App() {
 
         <OncologyEvidence />
         <PainEvidence />
+        <ECSNetworkEvidence />
         <ArchaeologyEvidence />
         <ResearchBridge />
 
