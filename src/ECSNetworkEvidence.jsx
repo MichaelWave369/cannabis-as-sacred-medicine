@@ -36,7 +36,10 @@ export default function ECSNetworkEvidence(){
         <h3 className="font-bold text-amber-950">Sacred is an ethical interpretation</h3><p className="mt-2 text-sm leading-6 text-stone-700">Reverence, dignity and lived experience can shape how people approach medicine. They do not convert laboratory mechanisms into human treatment claims, prove universal benefit or erase risks.</p>
       </div>
     </div>
-    <p className="mt-4 text-sm"><a className={linkClass} target="_blank" rel="noopener noreferrer" href="https://michaelwave369.github.io/Cannabiverse/app/ecs/">Open interactive Cannabiverse ECS Network Atlas</a></p>
+    <div className="mt-4 flex flex-wrap gap-4 text-sm">
+      <a className={linkClass} target="_blank" rel="noopener noreferrer" href="https://michaelwave369.github.io/Cannabiverse/app/ecs/">Open interactive Cannabiverse ECS Network Atlas</a>
+      <a className={linkClass} target="_blank" rel="noopener noreferrer" href="https://michaelwave369.github.io/Cannabiverse/app/ecs/body.html">Explore the human-body CB1/CB2 map</a>
+    </div>
     {state.status==='loading'&&<p role="status" className="mt-6 text-sm text-stone-700">Verifying versioned scientific source…</p>}
     {state.status==='unavailable'&&<p role="status" className="mt-6 rounded-xl border border-amber-300 bg-white p-5 text-sm text-stone-700">The authoritative ECS feed is not yet published, available, or compatible. No fallback medical or mechanistic claims will be displayed.</p>}
     {state.status==='ready'&&feed&&<div className="mt-7">

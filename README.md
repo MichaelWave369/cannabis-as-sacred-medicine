@@ -126,3 +126,7 @@ The [Ancient Cannabis Evidence section](https://michaelwave369.github.io/cannabi
 ## ECS Network Atlas · Φ Research Bridge content v5
 
 The [ECS Network Atlas companion](https://michaelwave369.github.io/cannabis-as-sacred-medicine/#ecs-network) presents source-governed endogenous signaling, CB1/CB2 receptors, FAAH/MAGL pathways, and scientific limitations through the existing versioned bridge. The [authoritative feed](https://michaelwave369.github.io/Cannabiverse/data/ecs-network/evidence-v1.json) and [network explorer](https://michaelwave369.github.io/Cannabiverse/app/ecs/) reside in Cannabiverse; no biochemical claims are copied into this consumer. Run `npm run check:ecs-network`; see [bridge notes](docs/ECS_NETWORK_BRIDGE_V5.md). The Cannabiverse feature must deploy first. Original Zenodo PDFs were not amended.
+
+## ECS Human-Body Map companion link
+
+The ECS Network Atlas section links to Cannabiverse's [CB1/CB2 human-body tissue explorer](https://michaelwave369.github.io/Cannabiverse/app/ecs/body.html). The seven anatomical pins are schematic, not expression-density measurements; the receptor pathways cite human and/or preclinical literature with explicit study/model boundaries. All tissue data and source receipts remain owned by Cannabiverse. Deploy [Cannabiverse PR #38](https://github.com/MichaelWave369/Cannabiverse/pull/38) first. The Sacred Medicine release does not amend the published Zenodo paper/PDFs.
